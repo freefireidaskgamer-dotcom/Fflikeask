@@ -27,7 +27,7 @@ def generate_guest_entries(num_accounts=5):
         
     return accounts
 
-def save_to_json(data, filename="token_bd.json"):
+def save_to_json(data, filename="token_ind.json"):
     with open(filename, "w") as f:
         json.dump(data, f, indent=4)
     print(f"✅ Success! Saare entries `{filename}` file mein save ho gaye hain. 😈🔥")
@@ -37,7 +37,7 @@ if __name__ == "__main__":
     total_accounts_to_make = 10
     
     generated_data = generate_guest_entries(total_accounts_to_make)
-    save_to_json(generated_data, "token_bd.json")
+    save_to_json(generated_data, "token_ind.json")
   {
     "token": "eyJhbGciOiJIUzI1NiIsInN2ciI6IjEiLCJ0eXAiOiJKV1QifQ.eyJhY2NvdW50X2lkIjoxMzc1Njc4NzMwMiwibmlja25hbWUiOiJmZ2RjVEZZV1ZVST0iLCJub3RpX3JlZ2lvbiI6IkJEIiwibG9ja19yZWdpb24iOiJCRCIsImV4dGVybmFsX2lkIjoiYWQzMTI1NDU3MmUwZDNhODEzNTFmNTIxNWFhMWIwODIiLCJleHRlcm5hbF90eXBlIjo0LCJwbGF0X2lkIjoxLCJjbGllbnRfdmVyc2lvbiI6IjEuMTA4LjMiLCJlbXVsYXRvcl9zY29yZSI6MTAwLCJpc19lbXVsYXRvciI6dHJ1ZSwiY291bnRyeV9jb2RlIjoiREUiLCJleHRlcm5hbF91aWQiOjQyNjYwNjExNjIsInJlZ19hdmF0YXIiOjEwMjAwMDAwNywic291cmNlIjowLCJsb2NrX3JlZ2lvbl90aW1lIjoxNzYyMDc4Nzk0LCJjbGllbnRfdHlwZSI6Miwic2lnbmF0dXJlX21kNSI6IiIsInVzaW5nX3ZlcnNpb24iOjAsInJlbGVhc2VfY2hhbm5lbCI6IiIsInJlbGVhc2VfdmVyc2lvbiI6Ik9CNTMiLCJleHAiOjE3Nzg4NjA1ODh9.fdun4H-jDDswDQiOlbY9zFvep6FREt7kFGG46TPD1uk"
   },
